@@ -1,0 +1,166 @@
+INFO 2025-12-24 03:11:49,165 autoreload 7180 9932 Watching for file changes with StatReloader
+INFO 2025-12-24 03:15:37,872 autoreload 15548 14064 Watching for file changes with StatReloader
+INFO 2025-12-24 03:22:28,266 autoreload 15548 14064 C:\HR_System\backend\apps\equity_management\models.py changed, reloading.
+INFO 2025-12-24 03:22:29,199 autoreload 7180 9932 C:\HR_System\backend\apps\equity_management\models.py changed, reloading.
+INFO 2025-12-24 03:23:03,318 autoreload 11496 8652 Watching for file changes with StatReloader
+INFO 2025-12-24 03:23:06,412 autoreload 14136 4836 Watching for file changes with StatReloader
+INFO 2025-12-24 03:24:56,153 autoreload 6056 16552 Watching for file changes with StatReloader
+INFO 2025-12-24 03:26:56,232 autoreload 10376 11948 Watching for file changes with StatReloader
+INFO 2025-12-24 03:29:20,194 autoreload 16392 17736 Watching for file changes with StatReloader
+INFO 2025-12-24 03:29:57,600 autoreload 16392 17736 C:\HR_System\backend\apps\search\serializers.py changed, reloading.
+INFO 2025-12-24 03:31:57,062 autoreload 11496 8652 C:\HR_System\backend\apps\retention_management\models.py changed, reloading.
+INFO 2025-12-24 03:31:57,076 autoreload 14136 4836 C:\HR_System\backend\apps\retention_management\models.py changed, reloading.
+INFO 2025-12-24 03:32:19,773 autoreload 13240 6756 Watching for file changes with StatReloader
+INFO 2025-12-24 03:32:19,896 autoreload 8680 6452 Watching for file changes with StatReloader
+INFO 2025-12-24 03:32:40,157 autoreload 13240 6756 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:32:40,192 autoreload 8680 6452 C:\HR_System\backend\hr_system\urls.py changed, reloading.
+INFO 2025-12-24 03:32:48,830 autoreload 17348 14776 Watching for file changes with StatReloader
+INFO 2025-12-24 03:32:49,087 autoreload 8776 10080 Watching for file changes with StatReloader
+INFO 2025-12-24 03:35:22,145 autoreload 3152 14132 Watching for file changes with StatReloader
+INFO 2025-12-24 03:36:29,642 autoreload 3152 14132 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:36:29,983 autoreload 8776 10080 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:36:30,185 autoreload 17348 14776 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:36:51,764 autoreload 2392 8104 Watching for file changes with StatReloader
+INFO 2025-12-24 03:36:53,267 autoreload 10156 17228 Watching for file changes with StatReloader
+INFO 2025-12-24 03:36:53,769 autoreload 16060 12224 Watching for file changes with StatReloader
+INFO 2025-12-24 03:37:15,035 autoreload 10156 17228 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:37:15,329 autoreload 16060 12224 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:37:15,480 autoreload 2392 8104 C:\HR_System\backend\apps\users\models.py changed, reloading.
+INFO 2025-12-24 03:37:33,926 autoreload 3780 16528 Watching for file changes with StatReloader
+INFO 2025-12-24 03:37:33,933 autoreload 13704 9304 Watching for file changes with StatReloader
+INFO 2025-12-24 03:37:42,931 autoreload 13704 9304 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:37:43,367 autoreload 3780 16528 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:38:12,493 autoreload 17112 11808 Watching for file changes with StatReloader
+INFO 2025-12-24 03:38:12,908 autoreload 14968 3500 Watching for file changes with StatReloader
+INFO 2025-12-24 03:38:46,473 autoreload 17112 11808 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:38:46,733 autoreload 14968 3500 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:38:52,947 autoreload 13396 8912 Watching for file changes with StatReloader
+INFO 2025-12-24 03:38:52,986 autoreload 6972 13516 Watching for file changes with StatReloader
+INFO 2025-12-24 03:38:57,663 autoreload 13396 8912 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:38:58,735 autoreload 6972 13516 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:39:12,916 autoreload 10312 7928 Watching for file changes with StatReloader
+INFO 2025-12-24 03:39:13,295 autoreload 4004 8320 Watching for file changes with StatReloader
+INFO 2025-12-24 03:41:26,416 autoreload 640 11964 Watching for file changes with StatReloader
+INFO 2025-12-24 03:42:45,487 autoreload 15444 3544 Watching for file changes with StatReloader
+INFO 2025-12-24 03:43:27,624 autoreload 4004 8320 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:43:28,160 autoreload 15444 3544 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:43:29,136 autoreload 10312 7928 C:\HR_System\backend\hr_system\settings.py changed, reloading.
+INFO 2025-12-24 03:43:44,420 autoreload 12668 16520 Watching for file changes with StatReloader
+INFO 2025-12-24 03:43:44,509 autoreload 15440 15296 Watching for file changes with StatReloader
+INFO 2025-12-24 03:43:49,241 server 12668 9596 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:43:49,477 server 12668 9596 Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-12-24 03:43:49,618 server 15440 11680 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:43:49,640 server 12668 9596 Listening on TCP address 0.0.0.0:8000
+INFO 2025-12-24 03:43:49,726 server 15440 11680 Configuring endpoint tcp:port=8000:interface=0.0.0.0
+CRITICAL 2025-12-24 03:43:50,074 server 15440 11680 Listen failure: Couldn't listen on 0.0.0.0:8000: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted.
+WARNING 2025-12-24 03:48:43,946 log 12668 13496 Not Found: /api/
+WARNING 2025-12-24 03:48:44,191 runserver 12668 9596 [33mHTTP GET /api/?id=68e492a0-3c37-415e-b7e6-404ddcf810c1&vscodeBrowserReqId=1766540921348 404 [2.21, 127.0.0.1:56855][0m
+WARNING 2025-12-24 03:48:52,846 log 12668 13496 Not Found: /
+WARNING 2025-12-24 03:48:52,926 runserver 12668 9596 [33mHTTP GET / 404 [0.62, 127.0.0.1:56863][0m
+WARNING 2025-12-24 03:48:53,325 log 12668 13496 Not Found: /favicon.ico
+WARNING 2025-12-24 03:48:53,327 runserver 12668 9596 [33mHTTP GET /favicon.ico 404 [0.04, 127.0.0.1:56863][0m
+INFO 2025-12-24 03:49:36,914 autoreload 15440 15296 C:\HR_System\backend\hr_system\urls.py changed, reloading.
+INFO 2025-12-24 03:49:37,551 autoreload 12668 16520 C:\HR_System\backend\hr_system\urls.py changed, reloading.
+INFO 2025-12-24 03:49:54,204 autoreload 14268 6812 Watching for file changes with StatReloader
+INFO 2025-12-24 03:49:55,713 autoreload 10336 8028 Watching for file changes with StatReloader
+INFO 2025-12-24 03:49:59,304 server 14268 8920 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:49:59,410 server 14268 8920 Configuring endpoint tcp:port=8000:interface=0.0.0.0
+INFO 2025-12-24 03:49:59,528 server 14268 8920 Listening on TCP address 0.0.0.0:8000
+INFO 2025-12-24 03:50:00,081 server 10336 3612 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:50:00,200 server 10336 3612 Configuring endpoint tcp:port=8000:interface=0.0.0.0
+CRITICAL 2025-12-24 03:50:00,393 server 10336 3612 Listen failure: Couldn't listen on 0.0.0.0:8000: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted.
+INFO 2025-12-24 03:50:29,260 autoreload 12884 1588 Watching for file changes with StatReloader
+INFO 2025-12-24 03:50:30,978 server 12884 17868 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:50:31,001 server 12884 17868 Configuring endpoint tcp:port=8000:interface=0.0.0.0
+CRITICAL 2025-12-24 03:50:31,050 server 12884 17868 Listen failure: Couldn't listen on 0.0.0.0:8000: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted.
+INFO 2025-12-24 03:51:00,394 runserver 14268 8920 [mHTTP GET / 200 [0.15, 127.0.0.1:56922][0m
+INFO 2025-12-24 03:52:00,379 autoreload 15624 15580 Watching for file changes with StatReloader
+INFO 2025-12-24 03:52:02,016 server 15624 7424 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:52:02,033 server 15624 7424 Configuring endpoint tcp:port=8080:interface=0.0.0.0
+INFO 2025-12-24 03:52:02,097 server 15624 7424 Listening on TCP address 0.0.0.0:8080
+INFO 2025-12-24 03:54:22,607 autoreload 17748 1496 Watching for file changes with StatReloader
+INFO 2025-12-24 03:54:24,781 server 17748 17992 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:54:24,888 server 17748 17992 Configuring endpoint tcp:port=8080:interface=0.0.0.0
+INFO 2025-12-24 03:54:25,028 server 17748 17992 Listening on TCP address 0.0.0.0:8080
+INFO 2025-12-24 03:54:39,229 runserver 17748 17992 [32mHTTP GET /admin/ 302 [0.94, 127.0.0.1:57059][0m
+INFO 2025-12-24 03:54:40,520 runserver 17748 17992 [mHTTP GET /admin/login/?next=/admin/ 200 [1.28, 127.0.0.1:57059][0m
+INFO 2025-12-24 03:54:41,287 runserver 17748 17992 [mHTTP GET /static/admin/css/dark_mode.css 200 [0.52, 127.0.0.1:57060][0m
+INFO 2025-12-24 03:54:41,671 runserver 17748 17992 [mHTTP GET /static/admin/css/nav_sidebar.css 200 [0.91, 127.0.0.1:57061][0m
+INFO 2025-12-24 03:54:42,060 runserver 17748 17992 [mHTTP GET /static/admin/css/base.css 200 [1.32, 127.0.0.1:57059][0m
+INFO 2025-12-24 03:54:42,381 runserver 17748 17992 [mHTTP GET /static/admin/js/theme.js 200 [1.11, 127.0.0.1:57067][0m
+INFO 2025-12-24 03:54:42,401 runserver 17748 17992 [mHTTP GET /static/admin/css/login.css 200 [1.34, 127.0.0.1:57069][0m
+INFO 2025-12-24 03:54:42,497 runserver 17748 17992 [mHTTP GET /static/admin/css/responsive.css 200 [1.21, 127.0.0.1:57068][0m
+INFO 2025-12-24 03:54:42,673 runserver 17748 17992 [mHTTP GET /static/admin/js/nav_sidebar.js 200 [0.40, 127.0.0.1:57060][0m
+WARNING 2025-12-24 03:54:42,990 log 17748 14340 Not Found: /favicon.ico
+WARNING 2025-12-24 03:54:43,136 runserver 17748 17992 [33mHTTP GET /favicon.ico 404 [0.24, 127.0.0.1:57060][0m
+INFO 2025-12-24 03:57:37,728 autoreload 18388 15296 Watching for file changes with StatReloader
+INFO 2025-12-24 03:57:45,638 server 18388 8456 HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+INFO 2025-12-24 03:57:45,681 server 18388 8456 Configuring endpoint tcp:port=8080:interface=0.0.0.0
+INFO 2025-12-24 03:57:45,689 server 18388 8456 Listening on TCP address 0.0.0.0:8080
+INFO 2025-12-24 03:57:47,896 runserver 18388 8456 [mHTTP POST /admin/login/?next=/admin/ 200 [2.18, 127.0.0.1:57176][0m
+INFO 2025-12-24 03:58:00,729 runserver 18388 8456 [32mHTTP POST /admin/login/?next=/admin/ 302 [1.01, 127.0.0.1:57184][0m
+INFO 2025-12-24 03:58:01,431 runserver 18388 8456 [mHTTP GET /admin/ 200 [0.56, 127.0.0.1:57184][0m
+INFO 2025-12-24 03:58:01,977 runserver 18388 8456 [mHTTP GET /static/admin/css/dashboard.css 200 [0.42, 127.0.0.1:57184][0m
+INFO 2025-12-24 03:58:02,147 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-addlink.svg 200 [0.16, 127.0.0.1:57184][0m
+INFO 2025-12-24 03:58:02,151 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-changelink.svg 200 [0.16, 127.0.0.1:57185][0m
+INFO 2025-12-24 03:58:20,414 runserver 18388 8456 [mHTTP GET /admin/auth/group/add/ 200 [0.73, 127.0.0.1:57193][0m
+INFO 2025-12-24 03:58:20,610 runserver 18388 8456 [mHTTP GET /static/admin/css/forms.css 200 [0.13, 127.0.0.1:57193][0m
+INFO 2025-12-24 03:58:20,789 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.31, 127.0.0.1:57194][0m
+INFO 2025-12-24 03:58:22,003 runserver 18388 8456 [mHTTP GET /static/admin/js/actions.js 200 [0.48, 127.0.0.1:57194][0m
+INFO 2025-12-24 03:58:22,073 runserver 18388 8456 [mHTTP GET /static/admin/js/core.js 200 [0.62, 127.0.0.1:57203][0m
+INFO 2025-12-24 03:58:22,254 runserver 18388 8456 [mHTTP GET /static/admin/js/jquery.init.js 200 [0.90, 127.0.0.1:57202][0m
+INFO 2025-12-24 03:58:22,281 runserver 18388 8456 [mHTTP GET /static/admin/js/SelectBox.js 200 [0.83, 127.0.0.1:57193][0m
+INFO 2025-12-24 03:58:22,326 runserver 18388 8456 [mHTTP GET /static/admin/js/vendor/jquery/jquery.js 200 [1.20, 127.0.0.1:57201][0m
+INFO 2025-12-24 03:58:22,398 runserver 18388 8456 [mHTTP GET /static/admin/js/admin/RelatedObjectLookups.js 200 [0.88, 127.0.0.1:57204][0m
+INFO 2025-12-24 03:58:22,976 runserver 18388 8456 [mHTTP GET /static/admin/css/widgets.css 200 [0.67, 127.0.0.1:57194][0m
+INFO 2025-12-24 03:58:23,365 runserver 18388 8456 [mHTTP GET /static/admin/js/prepopulate.js 200 [0.92, 127.0.0.1:57193][0m
+INFO 2025-12-24 03:58:23,539 runserver 18388 8456 [mHTTP GET /static/admin/js/SelectFilter2.js 200 [1.10, 127.0.0.1:57202][0m
+INFO 2025-12-24 03:58:23,655 runserver 18388 8456 [mHTTP GET /static/admin/js/urlify.js 200 [1.22, 127.0.0.1:57203][0m
+INFO 2025-12-24 03:58:23,673 runserver 18388 8456 [mHTTP GET /static/admin/js/prepopulate_init.js 200 [0.38, 127.0.0.1:57201][0m
+INFO 2025-12-24 03:58:23,749 runserver 18388 8456 [mHTTP GET /static/admin/js/vendor/xregexp/xregexp.js 200 [0.93, 127.0.0.1:57204][0m
+INFO 2025-12-24 03:58:23,884 runserver 18388 8456 [mHTTP GET /static/admin/js/change_form.js 200 [0.09, 127.0.0.1:57201][0m
+INFO 2025-12-24 03:58:24,272 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-unknown-alt.svg 200 [0.10, 127.0.0.1:57202][0m
+INFO 2025-12-24 03:58:24,291 runserver 18388 8456 [mHTTP GET /static/admin/img/search.svg 200 [0.11, 127.0.0.1:57204][0m
+INFO 2025-12-24 03:58:24,359 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-unknown.svg 200 [0.19, 127.0.0.1:57201][0m
+INFO 2025-12-24 03:58:24,723 runserver 18388 8456 [mHTTP GET /static/admin/img/selector-icons.svg 200 [0.55, 127.0.0.1:57203][0m
+INFO 2025-12-24 03:59:17,792 runserver 18388 8456 [32mHTTP POST /admin/auth/group/add/ 302 [0.10, 127.0.0.1:57217][0m
+INFO 2025-12-24 03:59:18,190 runserver 18388 8456 [mHTTP GET /admin/auth/group/ 200 [0.38, 127.0.0.1:57217][0m
+INFO 2025-12-24 03:59:19,274 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.30, 127.0.0.1:57218][0m
+INFO 2025-12-24 03:59:19,307 runserver 18388 8456 [mHTTP GET /static/admin/css/changelists.css 200 [0.89, 127.0.0.1:57217][0m
+INFO 2025-12-24 03:59:19,567 runserver 18388 8456 [mHTTP GET /static/admin/js/filters.js 200 [0.08, 127.0.0.1:57217][0m
+INFO 2025-12-24 03:59:19,614 runserver 18388 8456 [mHTTP GET /static/admin/img/tooltag-add.svg 200 [0.05, 127.0.0.1:57219][0m
+INFO 2025-12-24 03:59:19,647 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-yes.svg 200 [0.10, 127.0.0.1:57218][0m
+INFO 2025-12-24 03:59:34,310 runserver 18388 8456 [mHTTP GET /admin/auth/user/add/ 200 [0.34, 127.0.0.1:57225][0m
+INFO 2025-12-24 03:59:34,413 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.05, 127.0.0.1:57225][0m
+INFO 2025-12-24 04:00:01,271 runserver 18388 8456 [mHTTP POST /admin/auth/user/add/ 200 [0.04, 127.0.0.1:57237][0m
+INFO 2025-12-24 04:00:01,579 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:57237][0m
+INFO 2025-12-24 04:00:21,510 runserver 18388 8456 [32mHTTP POST /admin/auth/user/add/ 302 [1.22, 127.0.0.1:57249][0m
+INFO 2025-12-24 04:00:22,011 runserver 18388 8456 [mHTTP GET /admin/auth/user/2/change/ 200 [0.32, 127.0.0.1:57249][0m
+INFO 2025-12-24 04:00:22,128 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:57251][0m
+INFO 2025-12-24 04:00:22,245 runserver 18388 8456 [mHTTP GET /static/admin/js/calendar.js 200 [0.15, 127.0.0.1:57249][0m
+INFO 2025-12-24 04:00:22,343 runserver 18388 8456 [mHTTP GET /static/admin/js/admin/DateTimeShortcuts.js 200 [0.25, 127.0.0.1:57250][0m
+INFO 2025-12-24 04:00:23,146 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-clock.svg 200 [0.26, 127.0.0.1:57249][0m
+INFO 2025-12-24 04:00:23,205 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-calendar.svg 200 [0.40, 127.0.0.1:57250][0m
+INFO 2025-12-24 04:00:38,666 runserver 18388 8456 [mHTTP GET /admin/auth/user/2/history/ 200 [0.10, 127.0.0.1:57257][0m
+INFO 2025-12-24 04:00:43,132 runserver 18388 8456 [mHTTP GET /admin/auth/user/2/change/ 200 [0.19, 127.0.0.1:57257][0m
+INFO 2025-12-24 04:01:46,316 runserver 18388 8456 [mHTTP GET /static/admin/img/calendar-icons.svg 200 [0.06, 127.0.0.1:57268][0m
+INFO 2025-12-24 04:01:58,124 runserver 18388 8456 [32mHTTP POST /admin/auth/user/2/change/ 302 [0.11, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:01:58,808 runserver 18388 8456 [mHTTP GET /admin/auth/user/2/change/ 200 [0.43, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:01:58,999 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.10, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:02:04,939 runserver 18388 8456 [32mHTTP POST /admin/auth/user/2/change/ 302 [0.06, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:02:05,236 runserver 18388 8456 [mHTTP GET /admin/auth/user/2/change/ 200 [0.29, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:02:05,327 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:57278][0m
+INFO 2025-12-24 04:02:12,266 runserver 18388 8456 [mHTTP GET /admin/auth/group/ 200 [0.05, 127.0.0.1:57286][0m
+INFO 2025-12-24 04:02:12,362 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.03, 127.0.0.1:57286][0m
+INFO 2025-12-24 04:02:19,056 runserver 18388 8456 [mHTTP GET /admin/auth/user/add/ 200 [0.23, 127.0.0.1:57293][0m
+INFO 2025-12-24 04:02:19,613 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.14, 127.0.0.1:57293][0m
+INFO 2025-12-24 04:02:23,015 runserver 18388 8456 [mHTTP GET /admin/auth/user/ 200 [0.07, 127.0.0.1:57293][0m
+INFO 2025-12-24 04:02:23,238 runserver 18388 8456 [mHTTP GET /static/admin/img/icon-no.svg 200 [0.18, 127.0.0.1:57293][0m
+INFO 2025-12-24 04:02:23,263 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.20, 127.0.0.1:57294][0m
+INFO 2025-12-24 04:02:23,500 runserver 18388 8456 [mHTTP GET /static/admin/img/sorting-icons.svg 200 [0.15, 127.0.0.1:57294][0m
+INFO 2025-12-24 04:02:32,020 runserver 18388 8456 [mHTTP GET /admin/auth/user/?o=4.1 200 [0.06, 127.0.0.1:57302][0m
+INFO 2025-12-24 04:02:32,113 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.04, 127.0.0.1:57302][0m
+INFO 2025-12-24 04:02:37,061 runserver 18388 8456 [mHTTP GET /admin/auth/user/add/?_changelist_filters=o%3D4.1 200 [0.13, 127.0.0.1:57302][0m
+INFO 2025-12-24 04:02:37,225 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.08, 127.0.0.1:57302][0m
+INFO 2025-12-24 04:02:40,148 runserver 18388 8456 [mHTTP GET /admin/auth/group/ 200 [0.03, 127.0.0.1:57309][0m
+INFO 2025-12-24 04:02:40,249 runserver 18388 8456 [mHTTP GET /admin/jsi18n/ 200 [0.02, 127.0.0.1:57309][0m
