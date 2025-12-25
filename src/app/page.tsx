@@ -1,38 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import DashboardCard from '@/components/DashboardCard';
-import { Users, Briefcase, TrendingUp, AlertCircle } from 'lucide-react';
-
 export default function Dashboard() {
-  const [stats, setStats] = useState({
-    totalEmployees: 0,
-    openPositions: 0,
-    revenue: 0,
-    alerts: 0,
-  });
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Fetch stats from backend
-    fetchDashboardData();
-  }, []);
-
-  const fetchDashboardData = async () => {
-    try {
-      setIsLoading(true);
-      // This would connect to your Django backend
-      setStats({
-        totalEmployees: 245,
-        openPositions: 12,
-        revenue: 2450000,
-        alerts: 3,
-      });
-    } catch (error) {
-      console.error('Failed to fetch dashboard data:', error);
-    } finally {
-      setIsLoading(false);
-    }
+  const stats = {
+    totalEmployees: 245,
+    openPositions: 12,
+    revenue: 2450000,
+    alerts: 3,
   };
 
   return (
@@ -42,36 +15,34 @@ export default function Dashboard() {
         <p className="text-gray-600 mt-2">Welcome back to your HR management system</p>
       </div>
 
-      {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-        <DashboardCard
-          icon={<Users className="w-8 h-8" />}
-          title="Total Employees"
-          value={stats.totalEmployees}
-          trend="+2.5%"
-          color="blue"
-        />
-        <DashboardCard
-          icon={<Briefcase className="w-8 h-8" />}
-          title="Open Positions"
-          value={stats.openPositions}
-          trend="-1.2%"
-          color="green"
-        />
-        <DashboardCard
-          icon={<TrendingUp className="w-8 h-8" />}
-          title="Annual Revenue"
-          value={`$${(stats.revenue / 1000000).toFixed(1)}M`}
-          trend="+5.3%"
-          color="purple"
-        />
-        <DashboardCard
-          icon={<AlertCircle className="w-8 h-8" />}
-          title="Pending Actions"
-          value={stats.alerts}
-          trend="Review needed"
-          color="red"
-        />
+        {/* Total Employees */}
+        <div className="bg-white rounded-lg shadow p-6 border-l-4 border-blue-500">
+          <p className="text-gray-600 text-sm font-medium">Total Employees</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{stats.totalEmployees}</p>
+          <p className="text-blue-600 text-xs font-medium mt-2">+2.5% from last month</p>
+        </div>
+
+        {/* Open Positions */}
+        <div className="bg-white rounded-lg shadow p-6 border-l-4 border-green-500">
+          <p className="text-gray-600 text-sm font-medium">Open Positions</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{stats.openPositions}</p>
+          <p className="text-green-600 text-xs font-medium mt-2">Active postings</p>
+        </div>
+
+        {/* Annual Revenue */}
+        <div className="bg-white rounded-lg shadow p-6 border-l-4 border-purple-500">
+          <p className="text-gray-600 text-sm font-medium">Annual Revenue</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">${(stats.revenue / 1000000).toFixed(1)}M</p>
+          <p className="text-purple-600 text-xs font-medium mt-2">+5.3% growth</p>
+        </div>
+
+        {/* Pending Actions */}
+        <div className="bg-white rounded-lg shadow p-6 border-l-4 border-red-500">
+          <p className="text-gray-600 text-sm font-medium">Pending Actions</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{stats.alerts}</p>
+          <p className="text-red-600 text-xs font-medium mt-2">Review needed</p>
+        </div>
       </div>
 
       {/* Recent Activity Section */}
