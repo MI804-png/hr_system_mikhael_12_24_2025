@@ -92,7 +92,6 @@ export default function Header() {
 
   const handleNotificationClick = (id: number) => {
     console.log('Notification clicked:', id);
-    setShowNotifications(false);
   };
 
   return (

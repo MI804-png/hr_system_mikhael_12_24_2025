@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 
@@ -87,17 +87,104 @@ export default function PayrollPage() {
     { id: 15, employeeId: 5, employeeName: 'Tom Wilson', month: '2025-10', baseSalary: 70000, bonus: 2000, deductions: 7000, netSalary: 65000, status: 'paid', paidDate: '2025-10-01' },
   ]);
 
-  const [salaryConfig, setSalaryConfig] = useState<SalaryConfig[]>(
-    employees.map(emp => ({
-      employeeId: emp.id,
-      employeeName: emp.name,
-      baseSalary: emp.baseSalary,
-      bonus: 0,
-      deductions: emp.baseSalary * 0.1,
-      taxRate: 0.15,
-      providentFund: emp.baseSalary * 0.12,
-    }))
-  );
+  const [salaryConfig, setSalaryConfig] = useState<SalaryConfig[]>([]);
+  const [adminDeductions, setAdminDeductions] = useState<any[]>([]);
+
+  // Load admin deductions from localStorage
+  useEffect(() => {
+    const loadAdminDeductions = () => {
+      try {
+        const saved = localStorage.getItem('adminDeductions');
+        if (saved) {
+          const deductions = JSON.parse(saved);
+          console.log('Loaded admin deductions:', deductions);
+          setAdminDeductions(deductions);
+        }
+      } catch (e) {
+        console.error('Failed to load admin deductions:', e);
+        setAdminDeductions([]);
+      }
+    };
+
+    loadAdminDeductions();
+  }, []);
+
+  // Load salary configurations from localStorage and sync with payslips
+  useEffect(() => {
+    const loadSalaryConfig = () => {
+      const saved = localStorage.getItem('salary_configurations');
+      if (saved) {
+        try {
+          const configs = JSON.parse(saved);
+          console.log('Loaded salary configurations from localStorage:', configs);
+          setSalaryConfig(configs.map((config: any) => ({
+            employeeId: config.id,
+            employeeName: config.employeeName,
+            baseSalary: config.baseSalary,
+            bonus: config.bonus,
+            deductions: config.baseSalary * 0.1,
+            taxRate: 0.15,
+            providentFund: config.baseSalary * 0.12,
+          })));
+
+          // Update payslips with new salary information
+          setPayslips(prevPayslips => {
+            return prevPayslips.map(payslip => {
+              const newConfig = configs.find((c: any) => c.employeeName === payslip.employeeName);
+              if (newConfig) {
+                const newNetSalary = newConfig.baseSalary + newConfig.bonus - (newConfig.baseSalary * 0.1);
+                return {
+                  ...payslip,
+                  baseSalary: newConfig.baseSalary,
+                  bonus: newConfig.bonus,
+                  deductions: newConfig.baseSalary * 0.1,
+                  netSalary: newNetSalary,
+                };
+              }
+              return payslip;
+            });
+          });
+          return;
+        } catch (e) {
+          console.error('Failed to parse saved salary configurations:', e);
+        }
+      }
+
+      // Fallback to default config
+      const defaultConfig = employees.map(emp => ({
+        employeeId: emp.id,
+        employeeName: emp.name,
+        baseSalary: emp.baseSalary,
+        bonus: 0,
+        deductions: emp.baseSalary * 0.1,
+        taxRate: 0.15,
+        providentFund: emp.baseSalary * 0.12,
+      }));
+      setSalaryConfig(defaultConfig);
+    };
+
+    loadSalaryConfig();
+  }, [employees]);
+
+  // Calculate total deductions including admin deductions
+  const getTotalDeductions = (employeeName: string, month: string, baseDeductions: number): number => {
+    const employeeAdminDeductions = adminDeductions.filter(
+      d => d.employee_name === employeeName && 
+           d.status === 'applied' && 
+           d.month === parseInt(month.split('-')[1]) &&
+           d.year === parseInt(month.split('-')[0])
+    );
+    const adminDeductionsTotal = employeeAdminDeductions.reduce((sum, d) => sum + d.amount, 0);
+    return baseDeductions + adminDeductionsTotal;
+  };
+
+  // Calculate net salary with proper formula
+  const calculateNetSalary = (baseSalary: number, bonus: number, totalDeductions: number): number => {
+    const gross = baseSalary + bonus;
+    const tax = gross * 0.15; // 15% tax rate
+    const net = gross - tax - totalDeductions;
+    return Math.round(net * 100) / 100;
+  };
 
   const [selectedPayslip, setSelectedPayslip] = useState<PayslipRecord | null>(null);
   const [searchQuery, setSearchQuery] = useState('');

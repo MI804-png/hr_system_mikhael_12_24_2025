@@ -38,12 +38,24 @@ export default function Salary() {
   const { orders } = useData();
   const [adminDeductions, setAdminDeductions] = useState<AdminDeduction[]>([]);
 
-  const [salaries, setSalaries] = useState<SalaryRecord[]>([
-    { id: 1, employeeName: 'John Doe', position: 'Senior Developer', department: 'Engineering', salaryType: 'monthly', baseSalary: 85000, bonus: 5000 },
-    { id: 2, employeeName: 'Jane Smith', position: 'Project Manager', department: 'Management', salaryType: 'hourly', hourlyRate: 500, workingHoursPerMonth: 160, baseSalary: 80000, bonus: 0 },
-    { id: 3, employeeName: 'Mike Johnson', position: 'HR Manager', department: 'Human Resources', salaryType: 'monthly', baseSalary: 75000, bonus: 4000 },
-    { id: 4, employeeName: 'Sarah Davis', position: 'Full Stack Developer', department: 'Engineering', salaryType: 'hourly', hourlyRate: 450, workingHoursPerMonth: 160, baseSalary: 72000, bonus: 0 },
-  ]);
+  const [salaries, setSalaries] = useState<SalaryRecord[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('salary_configurations');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          console.error('Failed to parse saved salaries:', e);
+        }
+      }
+    }
+    return [
+      { id: 1, employeeName: 'John Doe', position: 'Senior Developer', department: 'Engineering', salaryType: 'monthly', baseSalary: 85000, bonus: 5000 },
+      { id: 2, employeeName: 'Jane Smith', position: 'Project Manager', department: 'Management', salaryType: 'hourly', hourlyRate: 500, workingHoursPerMonth: 160, baseSalary: 80000, bonus: 0 },
+      { id: 3, employeeName: 'Mike Johnson', position: 'HR Manager', department: 'Human Resources', salaryType: 'monthly', baseSalary: 75000, bonus: 4000 },
+      { id: 4, employeeName: 'Sarah Davis', position: 'Full Stack Developer', department: 'Engineering', salaryType: 'hourly', hourlyRate: 450, workingHoursPerMonth: 160, baseSalary: 72000, bonus: 0 },
+    ];
+  });
 
   // Fetch admin deductions from backend
   useEffect(() => {
@@ -71,6 +83,14 @@ export default function Salary() {
 
     fetchAdminDeductions();
   }, []);
+
+  // Save salary configurations to localStorage whenever they change
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('salary_configurations', JSON.stringify(salaries));
+      console.log('Saved salary configurations to localStorage:', salaries);
+    }
+  }, [salaries]);
 
   // Convert picked-up orders to food deductions
   const foodDeductions = useMemo(() => 

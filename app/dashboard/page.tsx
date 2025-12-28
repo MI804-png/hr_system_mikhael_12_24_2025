@@ -1,10 +1,12 @@
 'use client';
 
 import { useAuth } from '@/context/AuthContext';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Dashboard() {
   const { user } = useAuth();
+  const router = useRouter();
   
   // Sample employee data (same as in employees page)
   const [employees] = useState([
@@ -14,6 +16,26 @@ export default function Dashboard() {
     { id: 4, code: 'EMP-0004', name: 'Sarah Davis', position: 'Full Stack Developer', department: 'Engineering', email: 'sarah@company.com', joinDate: '2022-01-10' },
     { id: 5, code: 'EMP-0005', name: 'Tom Wilson', position: 'UI/UX Designer', department: 'Design', email: 'tom@company.com', joinDate: '2021-05-18' },
   ]);
+
+  // Load pending approvals count
+  const [pendingApprovalsCount, setPendingApprovalsCount] = useState(0);
+
+  // Get unique departments
+  const departments = [...new Set(employees.map(e => e.department))].sort();
+
+  useEffect(() => {
+    // Count pending availability requests
+    const saved = localStorage.getItem('availabilityRequests');
+    if (saved) {
+      try {
+        const requests = JSON.parse(saved);
+        const pendingCount = requests.filter((r: any) => r.status === 'pending').length;
+        setPendingApprovalsCount(pendingCount);
+      } catch (e) {
+        console.error('Failed to load pending requests:', e);
+      }
+    }
+  }, []);
 
   return (
     <div className="p-8">
@@ -34,8 +56,12 @@ export default function Dashboard() {
 
         <div className="bg-white rounded-lg shadow p-6 border-l-4 border-green-600">
           <p className="text-gray-600 text-sm font-medium">Departments</p>
-          <p className="text-3xl font-bold text-gray-900 mt-2">8</p>
-          <p className="text-xs text-gray-500 mt-2">Active departments</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{departments.length}</p>
+          <div className="text-xs text-gray-600 mt-2 space-y-1">
+            {departments.map(dept => (
+              <span key={dept} className="block">• {dept}</span>
+            ))}
+          </div>
         </div>
 
         <div className="bg-white rounded-lg shadow p-6 border-l-4 border-purple-600">
@@ -46,8 +72,13 @@ export default function Dashboard() {
 
         <div className="bg-white rounded-lg shadow p-6 border-l-4 border-yellow-600">
           <p className="text-gray-600 text-sm font-medium">Pending Approvals</p>
-          <p className="text-3xl font-bold text-gray-900 mt-2">23</p>
-          <p className="text-xs text-red-600 mt-2">Requires attention</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{pendingApprovalsCount}</p>
+          <button 
+            onClick={() => router.push('/availability')}
+            className="text-xs text-yellow-600 hover:text-yellow-700 mt-2 font-medium cursor-pointer"
+          >
+            → View requests
+          </button>
         </div>
       </div>
 
@@ -55,19 +86,27 @@ export default function Dashboard() {
       <div className="bg-white rounded-lg shadow p-6 mb-8">
         <h2 className="text-xl font-semibold text-gray-900 mb-4">Quick Actions</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <button className="p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-center">
+          <button 
+            onClick={() => router.push('/employees')}
+            className="p-4 border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition text-center cursor-pointer">
             <div className="text-2xl mb-2">👤</div>
             <p className="text-sm font-medium text-gray-900">Add Employee</p>
           </button>
-          <button className="p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-center">
+          <button 
+            onClick={() => router.push('/attendance')}
+            className="p-4 border border-gray-300 rounded-lg hover:bg-green-50 hover:border-green-300 transition text-center cursor-pointer">
             <div className="text-2xl mb-2">📋</div>
             <p className="text-sm font-medium text-gray-900">Attendance</p>
           </button>
-          <button className="p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-center">
+          <button 
+            onClick={() => router.push('/payroll')}
+            className="p-4 border border-gray-300 rounded-lg hover:bg-yellow-50 hover:border-yellow-300 transition text-center cursor-pointer">
             <div className="text-2xl mb-2">💰</div>
             <p className="text-sm font-medium text-gray-900">Payroll</p>
           </button>
-          <button className="p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-center">
+          <button 
+            onClick={() => router.push('/reports')}
+            className="p-4 border border-gray-300 rounded-lg hover:bg-purple-50 hover:border-purple-300 transition text-center cursor-pointer">
             <div className="text-2xl mb-2">📊</div>
             <p className="text-sm font-medium text-gray-900">Reports</p>
           </button>

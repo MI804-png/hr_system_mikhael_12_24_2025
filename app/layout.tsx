@@ -7,6 +7,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import { DataProvider } from "@/context/DataContext";
 import { NotificationProvider } from "@/context/NotificationContext";
 import { PermissionProvider } from "@/context/PermissionContext";
+import { SalaryProvider } from "@/context/SalaryContext";
 import ProtectedLayout from "@/components/ProtectedLayout";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,17 +29,19 @@ export default function RootLayout({
           <DataProvider>
             <NotificationProvider>
               <PermissionProvider>
-                <ProtectedLayout>
-                  <div className="flex h-screen bg-gray-50">
-                    <Sidebar />
-                    <div className="flex-1 flex flex-col overflow-hidden">
-                      <Header />
-                      <main className="flex-1 overflow-auto">
-                        {children}
-                      </main>
+                <SalaryProvider>
+                  <ProtectedLayout>
+                    <div className="flex h-screen bg-gray-50">
+                      <Sidebar />
+                      <div className="flex-1 flex flex-col overflow-hidden">
+                        <Header />
+                        <main className="flex-1 overflow-auto">
+                          {children}
+                        </main>
+                      </div>
                     </div>
-                  </div>
-                </ProtectedLayout>
+                  </ProtectedLayout>
+                </SalaryProvider>
               </PermissionProvider>
             </NotificationProvider>
           </DataProvider>
